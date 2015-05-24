@@ -17,7 +17,6 @@ impress-enable .step.active {
 }
 
 .slide {
-    opacity:0.4;
     display: block;
     width: 700px;
     height: 600px;
@@ -36,12 +35,34 @@ impress-enable .step.active {
 opacity:0.7; /*Give the opacity to the slide*/
 }
 
+/*Two*/
+#two {
+    opacity:1;
+    background-color: rgb(52,52,52);
+    color:white;
+    background-image: url('../assets/images/town.jpg');
+}
+
+/*Three*/
+#three {
+    background-color: rgb(52,52,52);
+    color: white;
+    background-image: url('../assets/images/dark_forest.jpg');
+}
+
+/*forth*/
+#forth {
+    background-color: rgb(52,52,52);
+    color: white;
+    background-image: url('../assets/images/enchanted_ruins.jpg');
+}
+
 
 
 /*Styling for slide paragraphs*/
 .slide p{
     margin-top:15px;
-    margin-bottom:15px;
+    margin-bottom:30px;
     line-height:45px;
 }
 
@@ -64,9 +85,4 @@ opacity:0.7; /*Give the opacity to the slide*/
     height:450px;
 }
 
-/*styling for the menu*/
-div.menu{
-    border-top: 2px solid black;
-    padding-top:25px;
-    text-align:center;
-}
+

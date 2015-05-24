@@ -68,6 +68,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\images\dark_forest.jpg" />
+    <Content Include="assets\images\enchanted_ruins.jpg" />
+    <Content Include="assets\images\endless_plains.jpg" />
+    <Content Include="assets\images\forgotten_swamps.jpg" />
+    <Content Include="assets\images\great_sword.jpg" />
+    <Content Include="assets\images\mountains_of_fire.jpg" />
+    <Content Include="assets\images\river_of_desires.jpg" />
+    <Content Include="assets\images\town.jpg" />
     <Content Include="css\main.css" />
     <Content Include="css\reset.css" />
     <Content Include="index.html" />
@@ -79,7 +87,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\fonts\" />
-    <Folder Include="assets\images\" />
     <Folder Include="assets\sounds\" />
   </ItemGroup>
   <ItemGroup>

@@ -13,6 +13,7 @@
     <link href="css/main.css" rel="stylesheet" />  <!--File of our main css code-->
 </head>
 <body onload="init();">
+
     <div id="impress">
         <!--First slide-->
         <div id="start" class="step slide">
@@ -25,10 +26,57 @@
                     the magic sword…" so you need to go and search the sword that will defeat
                     the wizard and release your people.
                 </p>
-                <p style="text-align:center;"><a href="#1">Start Game</a></p> <!--Center the buttons here-->
-                
+                <p style="text-align:center;"><a href="#two">Start Game</a></p> <!--Center the buttons here-->
             </div>
         </div>
+
+        <!--Slide two - Town --> <!--  data-x= "position in pixels for the slides "-->
+        <div id="two" class="step slide" data-x="1800">
+            <div class="slide-text">
+                <p>
+                    You try to remember what the legend says about the location of the sword,
+                    but you only remember a few words. "The fairy will guide the path" so, which
+                    way will you take, the left to the Dark Forest or the right to the Enchanted
+                    ruins?
+                </p>
+                <div class="menu" style="float:left;"><a href="#three">Dark Forest</a></div> <!--Make the buttons go to the sides-->
+                <div class="menu" style="float:right;"><a href="#forth">Enchanted ruins</a></div>
+            </div>
+        </div>
+
+        <!--Slide three - Dark Forest-->
+        <div id="three" class="step slide" data-x="5800" data-rotate="180">
+            <div class="slide-text">
+                <p>
+                    Now you are in the dark forest, you can barely see, is misty and the floor
+                    it's muddy. Suddenly a fairy appears and she tells you to follow her. But she
+                    flies so fast that you can't follow, you continue to walk until the path
+                    forks, and there is a sign "West: Forgotten Swamps, East: Mountains of fire"
+                </p>
+                <div class="menu" style="float:left;"><a href="#3">Forgotten Swamps</a></div> <!--Make the buttons go to the sides-->
+                <div class="menu" style="float:right;"><a href="#4">Mountains of fire</a></div>
+            </div>
+        </div>
+
+        <!--Slide forth- Enchanted Ruins-->
+        <div id="forth" class="step slide" data-y="10800" data-rotate="90">
+            <div class="slide-text">
+                <p>
+                    Now you are in the enchanted ruins, you can hear whispers everywhere but you
+                    can't see anybody; maybe the fairies. Behind a wall you hear a voice that
+                    tells you choose right... right... but you keep walking until you arrive to
+                    a dead end, you decide to turn back but everything looks different you feel
+                    lost, at the end of the corridor you can see two doors one beside the other
+                    and each one have a legend the right door you can read "Endless Plains" in
+                    the left one "River of Desires" which way you will go?
+
+                </p>
+                <div class="menu" style="float:left;"><a href="#3">River of Desires</a></div> <!--Make the buttons go to the sides-->
+                <div class="menu" style="float:right;"><a href="#4">Endless Plains</a></div>
+            </div>
+        </div>
+
+
     </div>
 
     <!--JavaScript Section-->
