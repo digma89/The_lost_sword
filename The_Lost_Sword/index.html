@@ -2,11 +2,21 @@
 <!--Date: 5/23/2015-->
 <!--Versio: 1.0-->
 <!--The Lost Sword-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Script to block the back button-->
+    <script type="text/javascript">
+    history.pushState(null, null, 'index.html');
+    window.addEventListener('popstate', function (event) {
+        history.pushState(null, null, 'index.html');
+    });
+    </script>
+
     <title>The Lost Sword</title>
     <!--CSS File-->
     <link href="css/reset.css" rel="stylesheet" /> <!--File used to reset the browser-specific styling -->
@@ -32,7 +42,7 @@
         </div>
 
         <!--Slide two - Town --> <!--  data-x= "position in pixels for the slides "-->
-        <div id="two" class="step slide" data-x="1800">
+        <div id="two" class="step slide" data-y="5800">
             <div class="slide-text">
                 <p>
                     You try to remember what the legend says about the location of the sword,
@@ -66,9 +76,9 @@
                     Now you are in the enchanted ruins, you can hear whispers everywhere but you
                     can't see anybody; maybe the fairies. Behind a wall you hear a voice that
                     tells you choose right... right... but you keep walking until you arrive to
-                    a dead end, you decide to turn back but everything looks different you feel
+                    a dead end, you decide to turn back but everything looks different, you feel
                     lost, at the end of the corridor you can see two doors one beside the other
-                    and each one have a legend the right door you can read "Endless Plains" in
+                    and each one has a legend the right door you can read "Endless Plains" in
                     the left one "River of Desires" which way you will go?
                 </p>
                 <div class="menu" style="float:left;"><a href="#seven">River of Desires</a></div> <!--Make the buttons go to the sides-->
@@ -88,8 +98,8 @@
                     Lightbringer sleeps in an ancient place with the dead lords" When you get the
                     end of the swamps you will go to Castle Black or to the Temple of the Seven?
                 </p>
-                <div class="menu" style="float:left;"><a href="#3">Castle Black</a></div> <!--Make the buttons go to the sides-->
-                <div class="menu" style="float:right;"><a href="#4">Temple of the Seven</a></div>
+                <div class="menu" style="float:left;"><a href="#nine">Castle Black</a></div> <!--Make the buttons go to the sides-->
+                <div class="menu" style="float:right;"><a href="#ten">Temple of the Seven</a></div>
             </div>
         </div>
 
@@ -106,8 +116,8 @@
                     lords" you need to decide now if you will take the "Lava path" or go through
                     the mountain to the "Dwarven Mines"?
                 </p>
-                <div class="menu" style="float:left;"><a href="#3">Lava Path</a></div> <!--Make the buttons go to the sides-->
-                <div class="menu" style="float:right;"><a href="#4">Dwarf Mines</a></div>
+                <div class="menu" style="float:left;"><a href="#eleven">Lava Path</a></div> <!--Make the buttons go to the sides-->
+                <div class="menu" style="float:right;"><a href="#twelve">Dwarf Mines</a></div>
             </div>
         </div>
 
@@ -118,27 +128,159 @@
                     You arrive to the river of the desires, for some reason you feel safe there,
                     tall trees and beautiful flowers everywhere. In your path you see something
                     moving in the river, curiously you go to se what it is and a beautiful siren
-                    appears she asks you to follow her into the river, she said she has something
-                    for you. You will go with her or you will keep walking on your own?
+                    appears. She asks you to follow her into the river, she says she has something
+                    for you. Will you go with her or will you keep walking on your own?
                 </p>
-                <div class="menu" style="float:left;"><a href="#3">Go with her</a></div> <!--Make the buttons go to the sides-->
-                <div class="menu" style="float:right;"><a href="#4">By yourself</a></div>
+                <div class="menu" style="float:left;"><a href="#thirteen">Go with her</a></div> <!--Make the buttons go to the sides-->
+                <div class="menu" style="float:right;"><a href="#fifteen">By yourself</a></div>
             </div>
         </div>
 
         <!--Slide eigth- Endless Plains-->
-        <div id="eight" class="step slide" data-y="30800" data-rotate="270">
+        <div id="eight" class="step slide" data-x="30800" data-rotate="270">
             <div class="slide-text">
                 <p>
-                    You have been walking for days and nights in the endless plains you are hungry
-                    and is dirty. You are starting to feel hopeless, but you just continue walking
-                    because you know that your friends and family needs you, at some point you see
+                    You have been walking for days and nights in the Endless Plains. You are hungry
+                    and dirty. You are starting to feel hopeless, but you just continue walking
+                    because you know that your friends and family need you, at some point you see
                     the mountains. You know that if you cross the mountains you will arrive to the
                     "Death Valley", but if you go west you will get to the "Great Desert". What
                     you will do now?
                 </p>
-                <div class="menu" style="float:left;"><a href="#3">Great Desert</a></div> <!--Make the buttons go to the sides-->
-                <div class="menu" style="float:right;"><a href="#4">Death Valley</a></div>
+                <div class="menu" style="float:left;"><a href="#sixteen">Great Desert</a></div> <!--Make the buttons go to the sides-->
+                <div class="menu" style="float:right;"><a href="#seventeen">Death Valley</a></div>
+            </div>
+        </div>
+
+        <!--Slide nine- Castle Black-->
+        <div id="nine" class="step slide" data-y="35800" data-rotate="270">
+            <div class="slide-text">
+                <p>
+                    Finally you are in Castle Black, the sword must be here. You start walking to
+                    the main chamber and near the throne you can see something shining, the sword?
+                    you walk toward that shiny thing and when you are close enough you see a sword...
+                    but, that is not Lightbringer, you take the sword to be sure and suddenly
+                    someone appear, he has a crown and starts yelling "thief! thief! my sword!".
+                    He starts attacking you you try to defend yourself, but he gets the sword and
+                    cross it through your chest. You were killed by the Mad King. Sorry you lose...
+                </p>
+                <div class="menu" style="text-align:center;"><a href="#start">Try again?</a></div> <!--Go back to the beginning-->
+            </div>
+        </div>
+
+        <!--Slide ten- Temple of the Seven-->
+        <div id="ten" class="step slide" data-y="40800" data-rotate="160">
+            <div class="slide-text">
+                <p>
+                    Now you are in the Temple of the Seven it's a nice place, the sword must be
+                    here. You know that this is an ancient tomb, at the moment that you cross the
+                    doors of the last chamber you can see a big hole in the ground, looks like
+                    endless. Then you start to hear cries hundreds of cries, and the lost souls
+                    of dead, start rising through the hole. You try to escape, but finally one grabs
+                    your arm and throw you to the hole of the oblivion. Sorry you lose...
+                </p>
+                <div class="menu" style="text-align:center;"><a href="#start">Try again?</a></div> <!--Go back to the beginning-->
+            </div>
+        </div>
+
+        <!--Slide eleven- Lava Path-->
+        <div id="eleven" class="step slide" data-x="45800" data-rotate="270">
+            <div class="slide-text">
+                <p>
+                    You are in the lava path, near the center of the earth, but there's nothing
+                    there, just lava everywhere. At some point you realize that the lava is increasing
+                    you try to return, but a river of lava is now blocking the way. You continue the
+                    other way until get to a dead end, the lava is behind you and you don't have
+                    more place to run. The lava slowly begins to approach and you have nothing to
+                    do but wait your slow death. Sorry you lose...
+                </p>
+                <div class="menu" style="text-align:center;"><a href="#start">Try again?</a></div> <!--Go back to the beginning-->
+            </div>
+        </div>
+
+        <!--Slide twelve- Dwarf mines-->
+        <div id="twelve" class="step slide" data-x="50800" data-rotate="180">
+            <div class="slide-text">
+                <p>
+                    You are in the dwarf mines, is unclear if it's the right place to search but you will
+                    continue looking. You enter a chamber that seems quite different from the others.
+                    There are four statues pointing with their fingers the center of the room, but is nothing
+                    there, so you decide to leave. In your way out, you barely see something in the wall,
+                    looks like a button behind a statue. you go there and press it. and then the floor starts
+                    moving, and something emerge from the center of the room, is the Lightbringer! You have
+                    found it! now you can go to free your people. You win!!!
+                </p>
+                <div class="menu" style="text-align:center;"><a href="#start">Congratulations!</a></div> <!--Go back to the beginning-->
+            </div>
+        </div>
+
+        <!--Slide thirteen- Frozen Land with the crystal-->
+        <div id="thirteen" class="step slide" data-y="55800" data-rotate="180">
+            <div class="slide-text">
+                <p>
+                    The siren guides you through the river and before you leave she gives you a small crystal,
+                    and you continue your path. After days of walking in the Frozen Lands you see an ice castle,
+                    you feel joyful because your food bag it's over and you think you will finally find the sword.
+                    After search all the place you can't find anything. Just a strange machine, you can turn back
+                    cause you don't have more food so you decide to enter the machine. Inside you find a small
+                    hole; immediately you remembered the crystal of the siren and placed it there, in a blink you
+                    are in another place, is not cold anymore...
+                </p>
+                <div class="menu" style="text-align:center;"><a href="#fourteen">Continue</a></div> <!--Go to the dwarf mines "you have the crystal-->
+            </div>
+        </div>
+
+        <!--Slide fourteen- Dwarf mines 2-->
+        <div id="fourteen" class="step slide" data-x="60800" data-rotate="360">
+            <div class="slide-text">
+                <p>
+                    Looks like you have been teleported, now you are in some old ruins. You start looking the place until,
+                    you enter a chamber that seems quite different from the others. There are four statues pointing with
+                    their fingers the center of the room, but is nothing there, so you decide to leave. In your way out,
+                    you barely see something in the wall, looks like a button behind a statue. you go there and press it.
+                    and then the floor starts moving, and something emerge from the center of the room, is the Lightbringer!
+                    You have found it! now you can go to free your people. You win!!!
+                </p>
+                <div class="menu" style="text-align:center;"><a href="#start">Congratulations!</a></div> <!--Go back to the beginning-->
+            </div>
+        </div>
+
+        <!--Slide fifteen- Frozen Land with the crystal-->
+        <div id="fifteen" class="step slide" data-y="65800" data-rotate="180">
+            <div class="slide-text">
+                <p>
+                    So you decided to continue by your own, you exit the river and go through the Frozen Land. You has been
+                    walking through the Frozen Lands and after days of walking you see an ice castle, you feel joyful because
+                    your food bag it's over and you think you will finally find the sword. After search all the place you
+                    can't find anything. Just a strange machine, you can turn back cause you don't have more food so you decide
+                    to enter the machine. Inside you find a small hole; but you have nothing that fits there, after awhile
+                    you fall asleep and freeze to dead. Sorry you lose...
+                </p>
+                <div class="menu" style="text-align:center;"><a href="#start">Try again?</a></div> <!--Go back to the beginning-->
+            </div>
+        </div>
+
+        <!--Slide sixteen- Great Desert-->
+        <div id="sixteen" class="step slide" data-y="70800" data-rotate="270">
+            <div class="slide-text">
+                <p>
+                    Finally you exit the endless plains, and now you are in the Great Desert. Your food bags are empty you walk
+                    until you can't continue. The sun never sets here. you pass out and die in the middle of nowhere. Sorry you
+                    lose.
+                </p>
+                <div class="menu" style="text-align:center;"><a href="#start">Try again?</a></div> <!--Go back to the beginning-->
+            </div>
+        </div>
+
+        <!--Slide seventeen- Valley of ashes-->
+        <div id="seventeen" class="step slide" data-y="75800" data-rotate="270">
+            <div class="slide-text">
+                <p>
+                    Finally you exit the endless plains, and now you are in the Valley of ashes. Your food bags are empty you
+                    walk until you can't continue. There is not light in this place, you feel hopeless. You are starving and
+                    don't know where you are, so you decide to close your eyes. Sorry you lose.
+                </p>
+                <div class="menu" style="text-align:center;"><a href="#start">Try again?</a></div> <!--Go back to the beginning-->
             </div>
         </div>
 
