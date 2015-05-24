@@ -1,5 +1,6 @@
 ﻿body {
     background-image: url('../assets/images/great_sword.jpg');
+
 }
 
 .impress-enable .step{
@@ -56,6 +57,35 @@ opacity:0.7; /*Give the opacity to the slide*/
     color: white;
     background-image: url('../assets/images/enchanted_ruins.jpg');
 }
+
+/*five*/
+#five {
+    background-color: rgb(52,52,52);
+    color: white;
+    background-image: url('../assets/images/forgotten_swamps.jpg');
+}
+
+/*six*/
+#six {
+    background-color: rgb(52,52,52);
+    color: white;
+    background-image: url('../assets/images/mountains_of_fire.jpg');
+}
+
+/*seven*/
+#seven {
+    background-color: rgb(52,52,52);
+    color: white;
+    background-image: url('../assets/images/river_of_desires.jpg');
+}
+
+/*eight*/
+#eight {
+    background-color: rgb(52,52,52);
+    color: white;
+    background-image: url('../assets/images/endless_plains.jpg');
+}
+
 
 
 
